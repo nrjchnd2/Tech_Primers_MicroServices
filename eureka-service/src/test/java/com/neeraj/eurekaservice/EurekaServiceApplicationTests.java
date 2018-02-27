@@ -1,4 +1,4 @@
-package com.neeraj.stockviewers.stockservice;
+package com.neeraj.eurekaservice;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class StockServiceApplicationTests {
+public class EurekaServiceApplicationTests {
 
 	@Test
 	public void contextLoads() {
