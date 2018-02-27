@@ -8,12 +8,12 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
-@FeignClient(name="db-service")
+@FeignClient(name="zuul-service")
 @RibbonClient(name="db-service")
 @Service
 public interface DBServiceProxy {
 	
-	@GetMapping("/rest/db/{username}")
+	@GetMapping("/db-service/rest/db/{username}")
 	public List<String> getSomething(@PathVariable("username") final String username);
 
 }
